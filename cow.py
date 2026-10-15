@@ -34,8 +34,8 @@ class Cow:
             self.y = self.screen_h - self.radius
             self.vy *= -1
 
-    def draw(self, screen):
-        pygame.draw.circle(screen, self.color, (int(self.x), int(self.y)), self.radius)
+    def draw(self, screen, offset_y=0):
+        pygame.draw.circle(screen, self.color, (int(self.x), int(self.y) + offset_y), self.radius)
 
 def collides(a, b):
     dx = a.x - b.x
