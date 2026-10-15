@@ -1,7 +1,16 @@
 # Yet-another-idle-merge-game
 
+A physics-based merge game where cows bounce around a box and merge
+into higher tiers when they collide.
 
-# Folder structure
+## Run
+
+    python3 -m venv venv
+    source venv/bin/activate
+    pip install -r requirements.txt
+    python main.py
+
+## Folder structure
 MA4_HT26/
 ├── .gitignore
 ├── requirements.txt
